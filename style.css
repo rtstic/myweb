@@ -114,3 +114,35 @@
         display: flex;
         column-gap: 20px;
       }
+
+
+
+
+
+
+
+      /*MEDIA QUERY*/
+      @media only screen 
+      and (min-device-width : 320px) 
+      and (max-device-width : 768px) {
+        .nav-foot-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            max-width: 80rem;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        #clock{
+            font-size: 50px;
+        }
+        .wrapper{
+            row-gap: 0px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        #navbar{
+            padding-left: 0px;
+        }
+   }
