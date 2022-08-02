@@ -1,0 +1,95 @@
+    *{
+        margin: 0px;
+    }
+    body {
+        font-family: 'Space Mono', monospace;
+        background: black;
+        color: white;
+    }
+    a{
+        color: white;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 90vh;
+        column-gap: 20px;
+    }
+
+    /*clock*/
+
+    #clock{
+        font-size: 100px;
+        font-weight: 700;
+    }
+    #calender{
+        font-size: 30px;
+      }
+
+    /*navbar and footer*/
+
+    .logo{
+        font-family: 'Space Mono', monospace;
+        font-weight: 900;
+    }
+    #navbar{
+        width: 100%;
+        position: fixed;
+        padding: 20px;
+        height: fit-content;
+        background-color: black;
+    }
+    .nav-foot-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 80rem;
+    }
+    .dropdown{
+        position: relative;
+        width:fit-content;
+    }
+    .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 10px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .dropdown-content a {
+        
+        text-decoration: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        row-gap: 10px;
+        background-color: #333;
+        width: 100%;
+      }
+      .mail{
+        width: 24px;
+        height: 24px;
+      }
+      .social{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+      
