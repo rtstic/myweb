@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="bulb.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-   
 </head>
 
 <body onload="setInterval()" >
@@ -28,8 +28,11 @@
     </div>
   </div>
     <div class="wrapper">
-        <!--<h1>welcome</h1>-->
-        <h2 style="margin-bottom: 20px; font-size:40px">Don't Disturb I'm <span style="color: #bcfd2e;">Sleeping..</span></h2>
+        <img id="bulbimage" src="/bulb-images/pic_bulboff.gif" alt="">
+        <div class="bulb-btns">
+            <button class="bulb-btn" id="turnon" onclick="bulbOn()">ON</button>
+            <button class="bulb-btn" id="turnoff" onclick="bulbOff()">OFF</button>
+        </div>
     </div>
   <div id="footer">
     <div class="nav-foot-wrapper">

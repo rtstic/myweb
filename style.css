@@ -8,6 +8,7 @@
     }
     a{
         color: white;
+        text-decoration: none;
     }
     .wrapper {
         display: flex;
@@ -17,6 +18,7 @@
         align-items: center;
         height: 90vh;
         column-gap: 20px;
+        row-gap: 20px;
     }
 
 
@@ -94,3 +96,21 @@
         column-gap: 10px;
       }
       
+      /*---------bulb----------*/
+
+      .bulb-btn{
+        padding: 10px;
+        background-color: #bcfd2e;
+        color: black;
+        border: 1px solid #bcfd2e;
+        width: 100px;
+        border-radius: 5px;
+      }
+      .bulb-btn :hover {
+        background-color: black;
+        color: #bcfd2e;
+      }
+      .bulb-btns{
+        display: flex;
+        column-gap: 20px;
+      }
