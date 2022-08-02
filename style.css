@@ -19,6 +19,141 @@
         column-gap: 20px;
     }
 
+    /*face*/
+    .head {
+        position: relative;
+      }
+      
+      .face {
+        height: 150px;
+        width: 150px;
+        background: linear-gradient(to top, rgb(222, 106, 4), rgb(222, 211, 4));
+        border-radius: 50%;
+        position: relative;
+      }
+      
+      .eyes {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        animation: eyes 1s infinite ease-in-out;
+        animation-direction: alternate-reverse;
+      }
+      
+      .eye {
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        border-bottom: 11px solid black;
+      }
+      
+      .bubble {
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(to top, rgb(72, 196, 157), rgb(121, 253, 211));
+        border-radius: 0 50% 50% 50%;
+        transform: scaleX(0.5);
+        position: absolute;
+        top: 95px;
+        right: 32%;
+        animation: bubble 1s infinite ease-in-out;
+        animation-direction: alternate-reverse;
+        transform: scaleX(0.8) rotate(-35deg);
+        filter: opacity(90%);
+        transform-origin: left;
+        transform-box: fill-box;
+      }
+      
+      .mouth {
+        height: 25px;
+        width: 20px;
+        border-radius: 50%;
+        background: linear-gradient(to top, rgb(76, 0, 0), rgb(30, 0, 0));
+        position: absolute;
+        top: 105px;
+        right: 50%;
+        transform: translateX(50%);
+        animation: mouth 1s infinite ease-in-out;
+        animation-direction: alternate-reverse;
+      }
+      
+      .sleep {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: bolder;
+      }
+      
+      .sleep > p {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.354);
+      }
+      
+      .z1 {
+        position: absolute;
+        font-size: 3rem;
+        top: 12px;
+        right: -5px;
+        color: transparent;
+        background: linear-gradient(to top, rgb(86, 0, 86), rgb(197, 0, 197));
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: sleep 2s infinite ease-in-out;
+        filter: opacity(0);
+      }
+      .z2 {
+        position: absolute;
+        font-size: 2.4rem;
+        top: 13px;
+        right: 30px;
+        color: transparent;
+        background: linear-gradient(to top, rgb(86, 0, 86), rgb(197, 0, 197));
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: sleep 2s infinite ease-in-out;
+        filter: opacity(0);
+      }
+      
+      .z3 {
+        position: absolute;
+        font-size: 1.2rem;
+        top: 35px;
+        right: 60px;
+        color: transparent;
+        background: linear-gradient(to top, rgb(86, 0, 86), rgb(197, 0, 197));
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: sleep 2s infinite ease-in-out;
+        filter: opacity(0);
+      }
+      
+      @keyframes mouth {
+        100% {
+          transform: translateX(50%) scale(0.8);
+        }
+      }
+      
+      @keyframes sleep {
+        100% {
+          filter: opacity(1);
+        }
+      }
+      
+      @keyframes eyes {
+        100% {
+          transform: translate(50%, -3px);
+        }
+      }
+      
+      @keyframes bubble {
+        100% {
+          transform: scaleX(1) rotate(-35deg);
+        }
+      }
+      
+
     /*clock*/
 
     #clock{
