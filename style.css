@@ -138,9 +138,10 @@
             font-size: 50px;
         }
         .wrapper{
-            row-gap: 0px;
+            row-gap: 20px;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
+            height: 82vh;
         }
         #navbar{
             padding-left: 0px;
