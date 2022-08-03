@@ -45,7 +45,8 @@
             console.log("rem to px")
         }
         else {
-            console.log("something is wrong")
+          document.getElementById("result").innerHTML = "Please Select Unit";
+            console.log("no unit selected")
         }
        
        
@@ -76,6 +77,7 @@
         <div id="pxrem-wrapper">
             <input type="number" id="pixel" class="pr" placeholder="Type here">
             <select name="options" id="pxrem" class="prselect">
+                <option value="choose">Choose Unit</option>
                 <option value="pixeltorem">Pixel to Rem</option>
                 <option value="remtopixel">Rem to Pixel</option>
             </select>
