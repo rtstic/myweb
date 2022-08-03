@@ -115,8 +115,44 @@
         column-gap: 20px;
       }
 
-
-
+      /*-------pixel to rem----*/
+      .greentxt{
+        color: #bcfd2e;
+      }
+      .pxrem-wrapper{
+        display: flex;
+      }
+      #pixel{
+        padding: 20px;
+        font-family: 'Space Mono', monospace;
+        border-radius: 5px;
+      }
+      #pxrem{
+        padding: 20px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 600;
+        background-color: #bcfd2e;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      select{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+      #convertbtn{
+        padding: 10px;
+        font-family: 'Space Mono', monospace;
+        background-color: black;
+        border: 1px solid #bcfd2e;
+        border-radius: 5px;
+        color: #bcfd2e;
+      }
+      #result{
+        font-family: monospace;
+        font-weight: 900;
+        font-size: 20px;
+      }
 
 
 
@@ -145,5 +181,9 @@
         }
         #navbar{
             padding-left: 0px;
+        }
+        #pixel{
+        width: 80%;
+        margin-bottom: 10px;
         }
    }

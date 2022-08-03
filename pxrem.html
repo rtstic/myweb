@@ -5,22 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="bulb.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+   
 </head>
+<script >
+    /*var input = document.getElementById("pixel")
+    input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                event.pressEnter();
+            }
+        });
+    
+    function pressEnter(){
+       // document.getElementById("convertbtn").click();
+        console.log("enter key is pressed");
+    }*/
 
-<body onload="setInterval()" >
+    function Convert(){
+        var px,p,r,rem;
+        var select = document.getElementById("pxrem");
+        var option = select.options[select.selectedIndex];
+        var v =option.value;
+
+        if (v=="pixeltorem"){
+            p = document.getElementById("pixel").value;
+            rem = p / 16;
+            document.getElementById("result").innerHTML = rem + " REM" ;
+            console.log("px to rem")
+        }
+        else if (v=="remtopixel"){
+            r = document.getElementById("pixel").value;
+            px = r * 16 ;
+            document.getElementById("result").innerHTML = px + " PX";
+            console.log("rem to px")
+        }
+        else {
+            console.log("something is wrong")
+        }
+       
+       
+    }
+
+</script>
+<body>
+    <!--Navbar-->
   <div id="navbar">
     <div class="nav-foot-wrapper">
       <div class="logo"><a href="index.html"><h1>rtstic</h1></a></div>
       <div class="dropdown">
         <button class="dropbtn">My Works</button>
         <div class="dropdown-content">
-          <a href="pxrem.html">PX 2 REM</a>
+        <a href="pxrem.html">PX 2 REM</a>
           <a href="clock.html">Clock</a>
           <a href="bulb.html">Bulb</a>
           <a href="netflix.html">Netflix</a>
@@ -28,13 +68,22 @@
       </div>
     </div>
   </div>
+
+  <!--content-->
     <div class="wrapper">
-        <img id="bulbimage" src="https://i.postimg.cc/KjK1wL3c/bulb-off.png" alt="" style="width: 150px;">
-        <div class="bulb-btns">
-            <button class="bulb-btn" id="turnon" onclick="bulbOn()">ON</button>
-            <button class="bulb-btn" id="turnoff" onclick="bulbOff()">OFF</button>
+        <!--<h1>welcome</h1>#bcfd2e-->
+        <h2 class="pr-header"><span class="greentxt">PIXEL </span>to<span class="greentxt"> REM</span> converter</h2>
+        <div id="pxrem-wrapper">
+            <input type="number" id="pixel" class="pr" placeholder="Type here">
+            <select name="options" id="pxrem" class="prselect">
+                <option value="pixeltorem">Pixel to Rem</option>
+                <option value="remtopixel">Rem to Pixel</option>
+            </select>
         </div>
+        <button onclick="Convert()" id="convertbtn">convert</button>
+        <span id="result"></span>
     </div>
+    <!--footer-->
   <div id="footer">
     <div class="nav-foot-wrapper">
         <div class="social">
