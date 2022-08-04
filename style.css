@@ -19,6 +19,7 @@
         height: 90vh;
         column-gap: 20px;
         row-gap: 20px;
+        width: 100%;
     }
 
 
@@ -33,7 +34,14 @@
       }
 
     /*--------------------------------navbar and footer-------------------------*/
-
+      .nav-links{
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+      }
+      .fa-headphones-simple{
+        color: #bcfd2e;
+      }
     .logo{
         font-family: 'Space Mono', monospace;
         font-weight: 900;
@@ -45,13 +53,20 @@
         height: fit-content;
         background-color: black;
     }
-    .nav-foot-wrapper{
+    .nav-wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: auto;
         max-width: 80rem;
     }
+    .foot-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      max-width: 80rem;
+  }
     .dropdown{
         position: relative;
         width:fit-content;
@@ -154,8 +169,25 @@
         font-size: 20px;
       }
 
-
-
+      /*-----Music-----*/
+      #music-cover{
+        width: 200px;
+        height: 200px;
+      }
+      .music-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+      }
+      .music-btn{
+        display: flex;
+        column-gap: 20px;
+      }
+      .musicicons{
+        width: 50px;
+        height: 50px;
+      }
 
       /*MEDIA QUERY*/
       @media only screen 
