@@ -193,7 +193,7 @@
       @media only screen 
       and (min-device-width : 320px) 
       and (max-device-width : 768px) {
-        .nav-foot-wrapper {
+        .nav-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -202,6 +202,15 @@
             flex-direction: column;
             row-gap: 10px;
         }
+        .foot-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto;
+          max-width: 80rem;
+          flex-direction: column;
+          row-gap: 10px;
+      }
         #clock{
             font-size: 50px;
         }
