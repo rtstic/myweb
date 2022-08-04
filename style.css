@@ -20,6 +20,8 @@
         column-gap: 20px;
         row-gap: 20px;
         width: 100%;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 77%)), url(https://www.linkpicture.com/q/image_186.jpg);
     }
 
 
