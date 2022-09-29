@@ -11,9 +11,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b6b993c56d.js" crossorigin="anonymous"></script>
+    <script src="textanimate.js"></script> 
 </head>
-
-<body onload="setInterval()" >
+<style>
+    .text-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 90vh;
+            column-gap: 20px;
+            row-gap: 20px;
+            width: 100%;
+            background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 77%)), url(https://www.linkpicture.com/q/image_186.jpg);
+    }
+    #letitbe{
+        font-size: 100px;
+    }
+    span{
+        opacity: 0;
+        color: white;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(50px);
+        display: inline-block;
+    }
+    span.animate{
+        opacity: 1;
+        color: rgb(223, 39, 198);
+        transform: translateY(0px);
+    }
+</style>
+<body >
+   
   <!--navbar start-->
   <div id="navbar">
     <div class="nav-wrapper">
@@ -39,9 +72,10 @@
       </div>
       </div>
   <!--navbar end-->  
-    <div class="wrapper">
+    <div class="text-wrapper">
         <!--<h1>welcome</h1>-->
-        <h2 style=" font-size:40px">Don't Disturb I'm <span style="color: #bcfd2e;">Sleeping..</span></h2>
+        <h1 id="letitbe" >ANIMATE</h1>
+        <button onclick="splitText()">Animate</button>
     </div>
   <!--footer start-->
   <div id="footer">
