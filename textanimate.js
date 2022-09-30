@@ -5,7 +5,7 @@ function splitText(){
     console.log(splitElement.length);
     headTag.textContent='';
     for (let i = 0; i < splitElement.length; i++) {
-        headTag.innerHTML += "<span>"+splitElement[i]+"</span>";
+        headTag.innerHTML += "<span class='textspan'>"+splitElement[i]+"</span>";
     }
     let char=0;
     let timer = setInterval(animateSpan,50)

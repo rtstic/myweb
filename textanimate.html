@@ -14,6 +14,15 @@
     <script src="textanimate.js"></script> 
 </head>
 <style>
+    body {
+        font-family: 'Space Mono', monospace;
+        background: black;
+        color: white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
     .text-wrapper{
             display: flex;
             flex-direction: column;
@@ -32,14 +41,14 @@
     #letitbe{
         font-size: 100px;
     }
-    span{
+    .textspan{
         opacity: 0;
         color: white;
         transition: all 0.5s ease-in-out;
         transform: translateY(50px);
         display: inline-block;
     }
-    span.animate{
+    .textspan.animate{
         opacity: 1;
         color: rgb(223, 39, 198);
         transform: translateY(0px);
@@ -65,7 +74,7 @@
             <a href="clock.html">Clock</a>
             <a href="bulb.html">Bulb</a>
             <a href="netflix.html">Netflix</a>
-            <a href="textanimate.html">Animate Text</a>
+            <a href="textanimate.html">Animate</a>
           </div>
         </div>
       </div>
